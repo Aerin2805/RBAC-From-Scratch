@@ -46,6 +46,7 @@ The server will run at `http://localhost:3000`.
 - **Endpoint**: `POST /api/auth/register`
 - **Description**: Register a new user
 - **Request Body**:
+
 ```json
 {
   "username": "Aerin Patel",
@@ -54,6 +55,7 @@ The server will run at `http://localhost:3000`.
 }
 ```
 - **Response**:
+
 ```json
 {
   message: `User Registered with username : ${username}` 
@@ -64,6 +66,7 @@ The server will run at `http://localhost:3000`.
 - **Endpoint**: `POST /api/auth/login`
 - **Description**: Log in an existing user
 - **Request Body**:
+
 ```json
 {
   "email": "john@example.com",
@@ -86,22 +89,24 @@ The server will run at `http://localhost:3000`.
   - `GET /api/users/manager`
   - `GET /api/users/user`
 - **Headers**:
+
 ```json
 {
   "Authorization": "Bearer your_jwt_token"
 }
 ```
 - **Response Examples**:
+
   - Admin: 
-    ```
+    ```json
     { message: "welcome admin" }
     ```
   - Manager:
-    ```
+    ```json
    { message: "welcome manager" }
     ```
   - User:
-    ```
+    ```json
     { message: "welcome user" }
     ```
 
@@ -134,3 +139,4 @@ Use Postman or any API client:
 1. Create a collection for all endpoints
 2. Add a `Bearer Token` for endpoints requiring authentication
 3. Verify responses for each role
+
