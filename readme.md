@@ -93,15 +93,15 @@ The server will run at `http://localhost:3000`.
 ```
 - **Response Examples**:
   - Admin: 
-    ```json
+    ```
     { message: "welcome admin" }
     ```
   - Manager:
-    ```json
+    ```
    { message: "welcome manager" }
     ```
   - User:
-    ```json
+    ```
     { message: "welcome user" }
     ```
 
