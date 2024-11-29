@@ -50,13 +50,13 @@ The server will run at `http://localhost:3000`.
 {
   "username": "Aerin Patel",
   "password": "password123",
-  "role": "user" // Can be "admin", "manager", or "user"
+  "role": "user"
 }
 ```
 - **Response**:
 ```json
 {
-  message: `User Registered with username : ${username}` 
+  "message": "User Registered with username : Aerin Patel"
 }
 ```
 
@@ -94,15 +94,15 @@ The server will run at `http://localhost:3000`.
 - **Response Examples**:
   - Admin: 
     ```json
-    { message: "welcome admin" }
+    { "message": "welcome admin" }
     ```
   - Manager:
     ```json
-   { message: "welcome manager" }
+    { "message": "welcome manager" }
     ```
   - User:
     ```json
-    { message: "welcome user" }
+    { "message": "welcome user" }
     ```
 
 ## Testing Instructions
@@ -134,5 +134,3 @@ Use Postman or any API client:
 1. Create a collection for all endpoints
 2. Add a `Bearer Token` for endpoints requiring authentication
 3. Verify responses for each role
-
-
